@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul 13 - Git dan GitHub | Rabiul Hafiz</title>
+  <!-- Nama: Rabiul Hafiz | NIM: 2502026 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Belajar Git, GitHub, dan Kolaborasi</h1>
+    <p>Modul 13 – Pemrograman Web 1 | Politeknik Aceh Selatan</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Commit 1: struktur awal -->
+    <section class="card" id="tentang">
+      <h2>Tentang Proyek</h2>
+      <p id="deskripsi">
+        Proyek ini digunakan untuk latihan kontrol versi menggunakan Git dan GitHub
+        sebagai persiapan mini project website interaktif.
+      </p>
+      <button id="btnUbah">Ubah Deskripsi</button>
+    </section>
+
+    <!-- Commit 2: fitur perintah git -->
+    <section class="card">
+      <h2>Ringkasan Perintah Git</h2>
+      <div id="tabelPerintah">
+        <div class="perintah-row header-row">
+          <span>Perintah</span>
+          <span>Fungsi</span>
+        </div>
+        <div class="perintah-row"><span>git init</span><span>Membuat repository lokal</span></div>
+        <div class="perintah-row"><span>git status</span><span>Melihat status perubahan file</span></div>
+        <div class="perintah-row"><span>git add .</span><span>Menambahkan file ke staging area</span></div>
+        <div class="perintah-row"><span>git commit -m</span><span>Menyimpan perubahan ke riwayat Git</span></div>
+        <div class="perintah-row"><span>git log --oneline</span><span>Melihat riwayat commit singkat</span></div>
+        <div class="perintah-row"><span>git push</span><span>Mengirim commit ke GitHub</span></div>
+        <div class="perintah-row"><span>git pull</span><span>Mengambil perubahan dari GitHub</span></div>
+        <div class="perintah-row"><span>git branch</span><span>Membuat atau melihat daftar branch</span></div>
+        <div class="perintah-row"><span>git merge</span><span>Menggabungkan branch</span></div>
+        <div class="perintah-row"><span>git clone</span><span>Menyalin repository dari GitHub</span></div>
+      </div>
+    </section>
+
+    <!-- Commit 3: fitur branch - alur kerja -->
+    <section class="card">
+      <h2>Alur Kerja Git</h2>
+      <div class="alur">
+        <div class="alur-item">Edit File</div>
+        <div class="alur-panah">→</div>
+        <div class="alur-item">git add</div>
+        <div class="alur-panah">→</div>
+        <div class="alur-item">git commit</div>
+        <div class="alur-panah">→</div>
+        <div class="alur-item">git push</div>
+      </div>
+    </section>
+
+    <!-- Commit 4: identitas mahasiswa -->
+    <section class="card" id="identitas">
+      <h2>Identitas Mahasiswa</h2>
+      <p><strong>Nama</strong>&nbsp;: Rabiul Hafiz</p>
+      <p><strong>NIM</strong>&nbsp;&nbsp;&nbsp;: 2502026</p>
+      <p><strong>Prodi</strong>&nbsp;: Teknik Informatika</p>
+      <p><strong>Kampus</strong>: Politeknik Aceh Selatan</p>
+    </section>
+
+    <!-- Area pesan -->
+    <div id="pesanArea" class="pesan" style="display:none;"></div>
+
+  </main>
+
+  <footer>
+    <p>Modul 13 – Git dan GitHub | Pemrograman Web 1 | Politeknik Aceh Selatan 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

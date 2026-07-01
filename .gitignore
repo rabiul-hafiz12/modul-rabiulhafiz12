@@ -1,0 +1,19 @@
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# Folder sementara
+.tmp/
+temp/
+
+# File log
+*.log
+
+# Folder VS Code
+.vscode/
+
+# Folder node_modules jika ada
+node_modules/
+
+# File zip hasil ekspor
+*.zip

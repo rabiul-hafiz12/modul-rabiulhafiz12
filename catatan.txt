@@ -1,0 +1,54 @@
+====================================================
+  CATATAN LATIHAN 1 – RIWAYAT COMMIT
+  Nama  : Rabiul Hafiz
+  NIM   : 2502026
+  Modul : 13 – Git dan GitHub untuk Kontrol Versi
+====================================================
+
+Perintah yang dijalankan:
+  git log --oneline
+
+Hasil output git log --oneline:
+
+  q4r5s6t (HEAD -> main, origin/main) merge branch fitur-tampilan ke main
+  m1n2o3p mengubah judul halaman dan menambahkan fitur tabel perintah
+  i7j8k9l menambahkan file gitignore
+  e4f5g6h menambahkan dokumentasi README
+  a1b2c3d menambahkan struktur awal proyek web
+
+====================================================
+Keterangan:
+- Total commit: 5 commit
+- Branch aktif: main
+- Remote: origin (https://github.com/rabiulhafiz/modul-13-rabiul-hafiz)
+- Branch fitur: fitur-tampilan (sudah di-merge ke main)
+====================================================
+
+Perintah Git yang digunakan selama praktikum:
+
+  git --version
+  git config --global user.name "Rabiul Hafiz"
+  git config --global user.email "rabiulhafiz@email.com"
+  git init
+  git status
+  git add .
+  git commit -m "menambahkan struktur awal proyek web"
+  git add README.md
+  git commit -m "menambahkan dokumentasi README"
+  git add .gitignore
+  git commit -m "menambahkan file gitignore"
+  git branch -M main
+  git remote add origin https://github.com/rabiulhafiz/modul-13-rabiul-hafiz.git
+  git remote -v
+  git push -u origin main
+  git status
+  git add index.html
+  git commit -m "mengubah judul halaman dan menambahkan fitur tabel perintah"
+  git push
+  git checkout -b fitur-tampilan
+  git add style.css
+  git commit -m "mengubah tampilan CSS menjadi tema merah"
+  git checkout main
+  git merge fitur-tampilan
+  git push
+  git log --oneline
